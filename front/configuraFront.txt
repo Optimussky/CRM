@@ -1,1 +1,58 @@
 ## CONFIGURA FRONT
+
+Configurar .gitignore
+https://www.freecodecamp.org/espanol/news/gitignore-explicado-que-es-y-como-agregar-a-tu-repositorio/
+
+
+
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# Ignora la carpeta node_modules
+node_modules
+
+# Ignora todos los archivos de texto
+*.txt
+
+# Ignora los archivos relacionados a API keys
+.env
+
+# Ignora archivos de configuración SASS
+.sass-cache
+
+
+
+
+# PUEDO OMITIR npm install -g @vue/cli si Ya lo hice alguna vez en la PC
+npm install -g @vue/cli
+vue create crm_vue
+    manually select features
+
+    chosse vue
+    babel
+    router
+    Vuex
+    CSS Pre-processors
+
+    Chosse version 3.X
+
+    Use history mode ruter YES
+    Sass/SCSS dart-sass
+    In dedicated config files N
+
+    Si decidí crear nombre al proyecto
+    cd proyecto
+
+    ## Instalar dependencias
+        npm install bulma
+        npm install bulma-toast
+        npm install axios
+
+    ## Configurar axios en src/main.js
+     import axios from 'axios'
+
+     axios.defaults.baseURL = 'http://127.0.0.1:8000'
+     createApp(App).use(store).use(router, axios).mount('#app')
+
+
+
