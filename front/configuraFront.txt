@@ -54,5 +54,13 @@ vue create crm_vue
      axios.defaults.baseURL = 'http://127.0.0.1:8000'
      createApp(App).use(store).use(router, axios).mount('#app')
 
-
+    ## Configurar src/App.vue
+    <template>
+        <router-view/>
+      </template>
+      
+      <style lang="scss">
+      @import '../node_modules/bulma/';
+      </style>
+      
 
