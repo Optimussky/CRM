@@ -1,12 +1,11 @@
 <template>
   <div>
     <Navbar />
+    
     <section class="section">
       <router-view/>
   </section>
-  </div>
-
-  
+  </div>  
 </template>
 
 
@@ -20,7 +19,7 @@ import axios from 'axios'
       Navbar
     },
 
-    beforeCreate(state) {
+    beforeCreate() {
       this.$store.commit('initializeStore')
 
       if (this.$store.state.token) {

@@ -1,1 +1,99 @@
-## CONFIGURA BACK :)
+## CONFIGURA BACK 
+
+
+## configurar entorno virtual dentro de la carpeta backend
+
+	pipenv shell
+	pip install django==3.2
+	pip install django-restframework
+	pip install django-cors-headers
+	pip install djoser
+
+## configurar django project
+
+	django-admin startproject crm_django
+
+# configurar settings.py
+
+Agregar variable para corsheaders, conexión al frontend
+
+
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8080',
+    ]
+
+## Agregar apps
+
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'corsheaders',
+    'djoser',
+]
+
+## Agregar middleware para el corsheaders:
+
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+
+
+
+## Agregar djoser a las urls:
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    
+    path('api/v1', include('djoser.urls')),
+    path('api/v1', include('djoser.urls.authtoken')),
+]
+
+## Inicializar base de datos:
+
+	cd crm_django
+	python manage.py makemigrations
+	python manage.py migrate
+	
+## CREATE SUPERUSER
+	python manage.py createsuperuser
+# Lenvantar el servidor
+	python manage.py runserver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
