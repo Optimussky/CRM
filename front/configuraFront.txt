@@ -1,5 +1,7 @@
 ## CONFIGURA FRONT
 
+TUTORIAL = https://www.youtube.com/watch?v=u2RJXTtCn2Y&t=1288s
+
 Configurar .gitignore
 https://www.freecodecamp.org/espanol/news/gitignore-explicado-que-es-y-como-agregar-a-tu-repositorio/
 
@@ -64,3 +66,9 @@ vue create crm_vue
       </style>
       
 ## Hacer posible hacer Registro de usuario desde Frontend
+## Hacer posible hacer LogIn desde Frontend
+
+## Hacer posible hacer Log out desde Frontend
+
+
+
