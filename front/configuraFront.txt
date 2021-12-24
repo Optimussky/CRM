@@ -1,5 +1,10 @@
 ## CONFIGURA FRONT
 
+
+## v-bind: mostrar todo lo de mi función
+## v-slot
+
+CODE WITH STEIN
 TUTORIAL = https://www.youtube.com/watch?v=u2RJXTtCn2Y&t=1288s
 
 Configurar .gitignore

@@ -73,7 +73,16 @@ urlpatterns = [
 
 
 
+## Parte 3
 
+## Implement a loading bar
+## Create a Django app for the leads
+## Database model for leads
+## Serializer for the leads
+## View for the leads
+## Set up the urls
+## Create page for showing the leads
+## Make it possible to adds leads
 
 
 

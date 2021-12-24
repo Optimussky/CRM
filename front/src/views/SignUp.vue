@@ -55,7 +55,10 @@ export default {
         }
     },
     methods: {
-        submitForm() {
+
+
+        async submitForm() {
+
             this.errors = []
             //console.log('submitForm')
             //console.log("Mi username ",this.username)
@@ -70,12 +73,13 @@ export default {
                 this.errors.push('The password are not matching')
             }
             if (!this.errors.length) {
+                this.$store.commit('setUsLoading', true)
                 const formData = {
                     username: this.username,
                     password: this.password1
                 }
 
-                axios
+                await axios
                     .post('/api/v1/users/', formData)
                     .then(response => {
                         toast({
@@ -97,6 +101,8 @@ export default {
                             this.errors.push('Something went wrong. Please try again')
                         }
                     })
+
+                this.$store.commit('setIsLoading', false)
             }
 
         }
