@@ -1,5 +1,5 @@
 ## CONFIGURA BACK 
-
+### https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Models
 
 ## configurar entorno virtual dentro de la carpeta backend
 
