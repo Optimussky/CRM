@@ -1,5 +1,7 @@
 ## CONFIGURA BACK 
 ### https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Models
+### https://docs.djangoproject.com/es/3.2/ref/models/querysets/
+### https://docs.djangoproject.com/en/3.2/ref/models/querysets/#field-lookups
 
 ## configurar entorno virtual dentro de la carpeta backend
 
