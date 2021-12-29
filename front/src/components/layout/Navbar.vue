@@ -14,9 +14,17 @@
         </div>
 
         <div class="navbar-menu">
-            <div class="navbar-end">                
-                <router-link to="/dashboard" class="navbar-item">Dashboard</router-link>
-                <router-link to="/dashboard/leads" class="navbar-item">Leads</router-link>
+            <div class="navbar-end">  
+                
+                <template v-if="$store.state.isAuthenticated">
+                    <router-link to="/dashboard" class="navbar-item">Dashboard</router-link>
+                    <router-link to="/dashboard/leads" class="navbar-item">Leads</router-link>
+                    <router-link to="/dashboard/my-account" class="button is-info">My Account</router-link>
+                </template>
+                    
+                <!--<router-link to="/dashboard" class="navbar-item" v-if="$store.state.isAuthenticated">Dashboard</router-link>
+                <router-link to="/dashboard/leads" class="navbar-item" v-if="$store.state.isAuthenticated">Leads</router-link>-->
+                
                 <div class="navbar-item">
                     <template v-if="!$store.state.isAuthenticated">
                         <div class="buttons">
@@ -25,10 +33,13 @@
                         </div>
                     </template>
                     
-                    <template v-else>
+                    <!--<template v-else>
                         
                         <router-link to="/dashboard/my-account" class="button is-info">My Account</router-link>
                     </template>
+                    -->
+
+                    
 
                 </div>
             </div>   

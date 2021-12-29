@@ -61,13 +61,13 @@
                         <div class="control">
                             <div class="select">
                                 
-                            <select v-model="status">
-                                <option value="new">New</option>
-                                <option value="contacted">Contacted</option>
-                                <option value="inprogress">In progress</option>
-                                <option value="lost">Lost</option>
-                                <option value="won">Won</option>
-                            </select>
+                                <select v-model="status">
+                                    <option value="new">New</option>
+                                    <option value="contacted">Contacted</option>
+                                    <option value="inprogress">In progress</option>
+                                    <option value="lost">Lost</option>
+                                    <option value="won">Won</option>
+                                </select>
                             </div>
                         </div>
                     </div>
