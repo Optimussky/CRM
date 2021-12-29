@@ -3,11 +3,7 @@
         <div class="navbar-brand">
             <router-link to="/" class="navbar-item">
                 <strong> CRM</strong>
-                <!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="false"></span>
-                <span aria-hidden="false"></span>
-                <span aria-hidden="false"></span>
-                </a> -->
+
                 
                 
             </router-link>
