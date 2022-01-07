@@ -4,6 +4,7 @@
 ### https://docs.djangoproject.com/en/3.2/ref/models/querysets/#field-lookups
 
 ## configurar entorno virtual dentro de la carpeta backend
+## al clonar en casa por first time, cambiar en Pipfile la version de python 3.9
 
 	pipenv shell
 	pip install django==3.2
